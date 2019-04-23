@@ -1,0 +1,91 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: black;
+    color:white;
+}
+
+.hero{
+    background:url("../hero.jpg") no-repeat;
+    background-position:center center;
+    background-size:cover;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid #ffffff26;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.single_info a{
+    color: white;
+    padding-bottom: 6px;
+    position:relative;
+}
+  
+.single_info a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;  
+    transition: width 0.5s ease, background .5s ease;
+}
+  .single_info a:hover:before{
+    visibility: visible;
+    background: white;
+    width: 100%;
+  }
+  .single_info a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    /*  Animate with a duration of 0.3 seconds */
+    transition: width 0.5s ease;
+  }
+  .single_info a:hover:after{
+    background: transparent;
+    width: 100%;
+    transition: all 0s ease;
+  }
+
+  .sec{
+    width: 100%;
+    height:550px;
+  }
+  .p1{
+    background: #052d45;
+  }
+
+  .p2{
+    background: #bb2131;
+  }
+
+  .p3{
+    background: #212e70;
+  }
+
+  h2{
+    margin:0;
+    text-align:center;
+  }
