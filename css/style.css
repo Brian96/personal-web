@@ -5,6 +5,10 @@ html,body{
     background: black;
     color:white;
 }
+a[href]{
+  text-decoration: none;
+
+}
 
 .hero{
     background:url("../hero.jpg") no-repeat;
@@ -47,13 +51,15 @@ h1{
     transition: width 0.5s ease, background .5s ease;
 }
 
-.link {
+a.link {
   display: block;
   text-decoration: none;
   color: white;
   margin-top: 10px;
   margin-bottom: 30px;
+  text-decoration: underline;
 }
+
 .single_info a:hover:before{
   visibility: visible;
   background: white;
@@ -61,10 +67,7 @@ h1{
  
 }
 
-a[href]{
-  text-decoration: none;
 
-}
 
 .sec{
   text-align: center;
