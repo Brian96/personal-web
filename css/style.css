@@ -46,11 +46,53 @@ h1{
     visibility: hidden;  
     transition: width 0.5s ease, background .5s ease;
 }
-  .single_info a:hover:before{
-    visibility: visible;
-    background: white;
-    width: 100%;
-  }
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.single_info a:hover:before{
+  visibility: visible;
+  background: white;
+  width: 100%;
+ 
+}
+
+a[href]{
+  text-decoration: none;
+
+}
+
+.sec{
+  text-align: center;
+  overflow: hidden;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+#photos img {
+  width: 150px;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+}
+
   .single_info a:after{
     content: '';
     display: block;
@@ -71,7 +113,7 @@ h1{
 
   .sec{
     width: 100%;
-    height:550px;
+   padding: 20px;
   }
   .p1{
     background: #052d45;
@@ -88,4 +130,8 @@ h1{
   h2{
     margin:0;
     text-align:center;
+  }
+
+  video{
+    background: black;
   }
